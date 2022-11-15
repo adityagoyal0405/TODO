@@ -8,7 +8,7 @@ console.log('Working');
 function addTaskToDOM (task) {
   const li=document.createElement('li');
   li.innerHTML=`
-    <input type="checkbox" id="${task.id}" &{task.done ? 'checked': ''} class="custom-checkbox">
+    <input type="checkbox" id="${task.id}" ${task.done ? 'checked': ''} class="custom-checkbox">
     <label for="${task.id}">${task.text}</label>
     <img src="https://cdn.pixabay.com/photo/2016/10/10/01/49/delete-1727486__340.png" class="delete" data-id="${task.id}" />
 `;
