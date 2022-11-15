@@ -26,7 +26,7 @@ for(let i=0;i< tasks.length;i++){
 function toggleTask (taskId) {
   const task=tasks.filter(function(task){
     return task.id === taskId;
-  })
+  });
   if(task.length >0){
   const currentTask=task[0];
   currentTask.done = !currentTask.done;
